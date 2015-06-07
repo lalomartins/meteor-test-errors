@@ -1,0 +1,13 @@
+*~
+node_modules
+node_modules/*
+npm-debug.log
+.meteor/local
+.meteor/.gitignore
+.meteor/build
+packages/*
+packages/*/.npm
+packages/*/.build*
+.DS_Store
+.meteor/test-db/*
+.zedstate

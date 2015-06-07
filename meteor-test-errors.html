@@ -1,0 +1,31 @@
+<head>
+  <title>Test error handling</title>
+</head>
+
+<body>
+  <h1>Test error handling</h1>
+
+  {{> pitcher}}
+</body>
+
+<template name="pitcher">
+  <p>
+    Open your developer tools and click one of the buttons.
+  </p>
+  <p>
+    Throw from event handler:
+    <button id="meteor-error-event">Meteor error</button>
+    <button id="regular-error-event">Regular error</button>
+  </p>
+  <p>
+    Throw from helper:
+    <button id="meteor-error-helper">Meteor error</button>
+    <button id="regular-error-helper">Regular error</button>
+  </p>
+  <p>
+    Throw from autorun:
+    <button id="meteor-error-tracker">Meteor error</button>
+    <button id="regular-error-tracker">Regular error</button>
+  </p>
+  {{throwHelperError}}
+</template>
